@@ -1,0 +1,292 @@
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card-container.cardPREGUNTAS {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card-container.cardLOGIN {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+p.wardengue {
+  color: #bf1650;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px;
+  z-index: 10000;
+}
+
+
+.over {
+  z-index: 10000;
+}
+
+
+p.wardengue::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+div.wardengue {
+  color: #bf1650;
+}
+
+div.wardengue::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+}
+
+.sr-only {
+  display: none;
+}
+
+
+.separe {
+  margin-top: 50px;
+}
+
+
+
+@media (min-width: 426px) {
+  .botones-superiores {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    /* Top , Right , Button , Left */
+
+    /* Ajusta la distancia desde la derecha según tu diseño */
+  }
+
+  .boton-eliminar {
+    width: 50px;
+    height: 50px;
+    background-image: url('eliminar.png');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del botón */
+    /* Otros estilos de tu botón */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .boton-editar {
+    width: 50px;
+    height: 50px;
+    background-image: url('edit.png');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del botón */
+    /* Otros estilos de tu botón */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .card {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .contenedorIMAGE {
+    width: 100%; /* Ancho del div */
+    height: 500px; /* Altura del div */
+    overflow: hidden; /* Para ocultar el contenido que se sale del div */
+    position: relative; /* Para que los elementos internos se posicionen relativos al div */
+  }
+
+  .imgReportes {
+    position: absolute; /* Para poder posicionar la imagen dentro del div */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+    max-width: 100%; /* Evitar que la imagen sea más grande que el div */
+    max-height: 100%; /* Evitar que la imagen sea más alta que el div */
+  }
+ 
+  
+  .cardLOGIN {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 15%;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+     border-radius: 12px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+  }
+
+  
+  .cardPREGUNTAS {
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 25px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 425px) {
+  .botones-superiores {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
+
+
+
+  
+  .boton-eliminar {
+    width: 30px;
+    height: 30px;
+    background-image: url('eliminar.png');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del botón */
+    /* Otros estilos de tu botón */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .boton-editar {
+    width: 30px;
+    height: 30px;
+    background-image: url('edit.png');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del botón */
+    /* Otros estilos de tu botón */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+
+  .contenedorIMAGE {
+    width: 100%; /* Ancho del div */
+    height: 300px; /* Altura del div */
+    overflow: hidden; /* Para ocultar el contenido que se sale del div */
+    position: relative; /* Para que los elementos internos se posicionen relativos al div */
+  }
+
+  .imgReportes {
+    position: absolute; /* Para poder posicionar la imagen dentro del div */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+    max-width: 100%; /* Evitar que la imagen sea más grande que el div */
+    max-height: 100%; /* Evitar que la imagen sea más alta que el div */
+  }
+
+  .cardLOGIN {
+    background-color: #f7f7f7;
+    padding: 5px 7px 10px;
+    margin: 0 auto 15px;
+    margin-top: 35%;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+  }
+
+  .card {
+    background-color: #f7f7f7;
+    padding: 5px 7px 10px;
+    margin: 0 auto 15px;
+    margin-top: 75px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 14px; /* Tamaño de letra dos veces el tamaño base */
+  }
+}
+
+.botones-superiores button {
+  margin-left: 5px;
+
+  /* Ajusta el espacio entre los botones si es necesario */
+}
+
+
+.boton-eliminar:hover {
+  background-image: url('eliminarh.png');
+  /* Cambiamos la imagen en hover */
+  transform: scale(1.1);
+  /* Escalamos un poco el botón */
+  border-radius: 5px;
+}
+
+
+
+.boton-editar:hover {
+  background-image: url('edith.png');
+  /* Cambiamos la imagen en hover */
+  transform: scale(1.1);
+  /* Escalamos un poco el botón */
+  border-radius: 5px;
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #6b97f7 50%, #f7137e 50%);
+}
+
+
+
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+
+
+
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}

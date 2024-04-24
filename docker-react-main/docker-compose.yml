@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+    container_name: react_front-${CONTAINER_PREFIX}
+    restart: always
+    volumes:
+      - "./react-app/public:/app/public"
+      - "./react-app/src:/app/src"
+    command: npm start
+    
+    ports:
+      - ${APP_PORT}:3000
+
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_API_URL=http://palancar.izt.uam.mx:4001/api/65ebe1a9c60fcb54b3da1872
+
